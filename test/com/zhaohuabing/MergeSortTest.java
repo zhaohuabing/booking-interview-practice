@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author Huabing Zhao
  *
  */
-public class MinimumSwapsTest {
+public class MergeSortTest {
 
     /**
      * @throws java.lang.Exception
@@ -19,9 +19,10 @@ public class MinimumSwapsTest {
 
     @Test
     public void test() {
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {1, 3, 6, 4, 5, 9, 7, 8, 2}), 3);
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {1, 2, 3}), 0);
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {4, 3, 2, 1}), 2);
+        int[] result = MergeSort.mergeSort(new int[] {3, 2, 1, 4});
+        assertArrayEquals(result, new int[] {1, 2, 3, 4});
+        result = MergeSort.mergeSort(new int[] {0, 5, 3, 2, 1, 4});
+        assertArrayEquals(result, new int[] {0, 1, 2, 3, 4, 5});
     }
 
 }

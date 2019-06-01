@@ -9,7 +9,7 @@ import org.junit.Test;
  * @author Huabing Zhao
  *
  */
-public class MinimumSwapsTest {
+public class MarkAndToysTest {
 
     /**
      * @throws java.lang.Exception
@@ -19,9 +19,8 @@ public class MinimumSwapsTest {
 
     @Test
     public void test() {
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {1, 3, 6, 4, 5, 9, 7, 8, 2}), 3);
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {1, 2, 3}), 0);
-        assertEquals(MinimumSwaps.minimumSwaps(new int[] {4, 3, 2, 1}), 2);
+        assertEquals(MarkAndToys.maximumToys(new int[] {1, 12, 5, 111, 200, 1000, 10}, 50), 4);
+        assertEquals(MarkAndToys.maximumToys(new int[] {1, 2, 3, 4}, 7), 3);
     }
 
 }
